@@ -108,9 +108,9 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Label Content="Wähle ein Kopfspiel:" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Arial" FontSize="22" FontWeight="Bold"/>
-            <RadioButton x:Name="rtb_Standard" Content="Standardkopfspiel 0,167 DIN 867" HorizontalAlignment="Left" Margin="10,40,-10,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" />
-            <RadioButton x:Name="rtb_0_1" Content="Kopfspiel 0,1 DIN 867" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
-            <RadioButton x:Name="rtb_0_3" Content="Kopfspiel 0,3 DIN 867" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <RadioButton GroupName="Kopfspiel" x:Name="rtb_Standard" Content="Standardkopfspiel 0,167 DIN 867" HorizontalAlignment="Left" Margin="10,40,-10,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" />
+            <RadioButton GroupName="Kopfspiel" x:Name="rtb_0_1" Content="Kopfspiel 0,1 DIN 867" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
+            <RadioButton GroupName="Kopfspiel" x:Name="rtb_0_3" Content="Kopfspiel 0,3 DIN 867" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="142" Margin="26,403,0,0" VerticalAlignment="Top" Width="335">
             <Grid.Background>
@@ -120,9 +120,9 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Label HorizontalAlignment="Left"  VerticalAlignment="Top" FontFamily="Arial" FontSize="22" Width="225" FontWeight="Bold" Content="Wähle ein Werkstoff:" />
-            <RadioButton x:Name="rtb_EN_GJL" Content="EN-GJL-200" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" />
-            <RadioButton x:Name="rtb_EN_GJS" Content="EN-GJS-350" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" />
-            <RadioButton x:Name="rtb_S235JR" Content="S235JR" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" Height="23" Width="107"/>
+            <RadioButton GroupName="Werkstoff"  x:Name="rtb_EN_GJL" Content="EN-GJL-200" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" />
+            <RadioButton GroupName="Werkstoff" x:Name="rtb_EN_GJS" Content="EN-GJS-350" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" />
+            <RadioButton GroupName="Werkstoff" x:Name="rtb_S235JR" Content="S235JR" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="20" Height="23" Width="107"/>
         </Grid>
         <Grid Height="543" Margin="1093,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="250">
             <Grid.Background>
@@ -132,22 +132,22 @@
                 </LinearGradientBrush>
             </Grid.Background>
             <Label Content="Ihr individuelles Zahnrad:" HorizontalAlignment="Left" VerticalAlignment="Top" Height="38" Width="240" FontFamily="Arial" FontSize="20"/>
-            <Label x:Name="lb_Zahnfußhöhe" Content="Zahnfußhöhe" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txt_Fußhöhe" HorizontalAlignment="Left" Height="23" Margin="120,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txt_Fußhöhe_TextChanged"/>
-            <Label x:Name="lb_Zahnkopfhöhe" Content="Zahnkopfhöhe" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txt_Kopfhöhe" HorizontalAlignment="Left" Height="23" Margin="120,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txt_Kopfhöhe_TextChanged"/>
-            <Label x:Name="lb_Teilung" Content="Teilung" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txt_Teilung" HorizontalAlignment="Left" Height="23" Margin="120,235,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="lb_Fußkreisdurchmesser" Content="Fußkreisdurchmesser" HorizontalAlignment="Left" Margin="10,300,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="lb_Grundkreis" Content="Grundkreisdurchmesser" HorizontalAlignment="Left" Margin="10,379,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="lb_Gewicht" Content="Gewicht" HorizontalAlignment="Left" Margin="10,441,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="lb_Preis" Content="Preis" HorizontalAlignment="Left" Margin="10,507,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txt_Fußkreis" HorizontalAlignment="Left" Height="23" Margin="136,303,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="104"/>
-            <TextBox x:Name="txt_Grundkreis" HorizontalAlignment="Left" Height="23" Margin="149,379,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="91"/>
-            <TextBox x:Name="txt_Gewicht" HorizontalAlignment="Left" Height="23" Margin="120,444,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-            <TextBox x:Name="txt_Preis" HorizontalAlignment="Left" Height="23" Margin="120,510,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-            <Label x:Name="lb_Werkstoff" Content="Werkstoff" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
-            <Label x:Name="lb_Werkstoffwahl" Content="" HorizontalAlignment="Left" Margin="149,112,0,0" VerticalAlignment="Top" Width="91"/>
+            <Label x:Name="lb_Zahnfußhöhe" Content="Zahnfußhöhe" HorizontalAlignment="Left" Margin="10,94,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Zahnkopfhöhe" Content="Zahnkopfhöhe" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Teilung" Content="Teilung" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.704,1.152"/>
+            <Label x:Name="lb_Fußkreisdurchmesser" Content="Fußkreisdurchmesser" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Grundkreis" Content="Grundkreisdurchmesser" HorizontalAlignment="Left" Margin="10,277,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Gewicht" Content="Gewicht" HorizontalAlignment="Left" Margin="10,323,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Preis" Content="Preis" HorizontalAlignment="Left" Margin="10,361,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Werkstoff" Content="Werkstoff" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Werkstoffwahl" Content="" HorizontalAlignment="Left" Margin="149,50,0,0" VerticalAlignment="Top" Width="91"/>
+            <Label x:Name="lb_Fußhöhe" Content="" HorizontalAlignment="Left" Margin="182,94,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Kopfhöhe" Content="" HorizontalAlignment="Left" Margin="182,145,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Teilung1" Content="" HorizontalAlignment="Left" Margin="182,193,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Fußkreis" Content="" HorizontalAlignment="Left" Margin="182,232,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Grundkreis1" Content="" HorizontalAlignment="Left" Margin="182,277,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.13,0.68"/>
+            <Label x:Name="lb_Gewicht1" Content="" HorizontalAlignment="Left" Margin="182,323,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lb_Preis1" Content="" HorizontalAlignment="Left" Margin="182,361,0,0" VerticalAlignment="Top"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="65" Margin="463,648,0,0" VerticalAlignment="Top" Width="478">
             <Grid.Background>
